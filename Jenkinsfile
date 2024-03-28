@@ -17,6 +17,10 @@ pipeline {
     }
 
     stage('Push image') {
+      environment {
+        BRANCH_NAME = 'main'
+        BUILD_NUMBER = '1'
+      }
       steps {
         script {
           docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
