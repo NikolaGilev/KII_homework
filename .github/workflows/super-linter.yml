@@ -36,9 +36,9 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t nikola.gilev/KII_lab5:latest .
+          docker build -t nikola.gilev/kii_lab5:latest .
 
       - name: Push Docker image
         run: |
-          docker push nikola.gilev/KII_lab5:latest
+          docker push nikola.gilev/kii_lab5:latest
 
